@@ -65,14 +65,14 @@ const Home = () => {
       <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-4xl flex">
         <div className="w-1/2">
           <img
-            src="https://via.placeholder.com/400"
+            src="image.png"
             alt="NFT Preview"
             className="rounded-lg"
           />
         </div>
         <div className="w-1/2 pl-8">
           <h2 className="text-2xl font-bold mb-4">
-            Abstraction - Early supported NFT
+            Abstraction - Early supporters
           </h2>
           <p className="mb-4">
             Welcome, early supporters! We are thrilled to have you with us at
