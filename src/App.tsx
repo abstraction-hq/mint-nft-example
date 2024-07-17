@@ -16,12 +16,16 @@ const Home = () => {
   }, []);
 
   const onConnect = async () => {
-    const [wallet] = await (window as any).abstraction.request({
-      method: "eth_requestAccounts",
-      params: {},
-    });
+    try {
+      const [wallet] = await (window as any).abstraction.request({
+        method: "eth_requestAccounts",
+        params: {},
+      });
 
-    setAddress(wallet);
+      setAddress(wallet);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   const onMint = async () => {
