@@ -62,15 +62,15 @@ const Home = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-900 text-white">
-      <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-4xl flex">
-        <div className="w-1/2">
+      <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-4xl flex flex-col md:flex-row">
+        <div className="w-full md:w-1/2 mb-4 md:mb-0">
           <img
             src="image.png"
             alt="NFT Preview"
-            className="rounded-lg"
+            className="rounded-lg w-full"
           />
         </div>
-        <div className="w-1/2 pl-8">
+        <div className="w-full md:w-1/2 md:pl-8">
           <h2 className="text-2xl font-bold mb-4">
             Abstraction - Early supporters
           </h2>
@@ -86,7 +86,7 @@ const Home = () => {
           </p>
           {isConnected && (
             <div className="mb-4">
-              <span className="block text-gray-400">
+              <span className="block text-gray-400 break-all">
                 Connected Address: {address}
               </span>
             </div>
